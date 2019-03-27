@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue_white"
+    tools:context=".PlayersActivity">
+
+
+    <TextView
+        android:id="@+id/namesOfPlayersTV"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:shadowColor="#3D0012"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="3"
+        android:text="@string/names_of_players"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTVCountOfPlayer"
+        android:textSize="28sp"
+        style="@style/TVGameActivity"/>
+
+
+    <EditText
+        android:id="@+id/enterNameOfPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namesOfPlayersTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@id/btnAdd"
+        android:background="@drawable/edit_text_name"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:ems="10"
+        android:hint="@string/enter_name"
+        android:inputType="textCapWords|textCapSentences"
+        android:lines="1"
+        android:maxLength="10"
+        android:padding="15dp"
+        android:typeface="serif"
+        android:autofillHints="" tools:targetApi="o"/>
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="@style/StyleButtons"
+        android:layout_below="@id/namesOfPlayersTV"
+        android:layout_toStartOf="@id/btnClearAll"
+        android:background="@drawable/oval_button_add"
+        android:onClick="onClickButtonAdd"
+        android:text="@string/add"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnClearAll"
+        style="@style/StyleButtons"
+        android:layout_below="@id/namesOfPlayersTV"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/oval_btn_clearall"
+        android:onClick="onPressClearAll"
+        android:text="@string/clear_all"
+        android:textSize="12sp" />
+
+
+    <ListView
+        android:id="@+id/listviePlayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnStartGame"
+        android:layout_below="@id/enterNameOfPlayers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+
+    </ListView>
+
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_yellow"
+        android:onClick="onPressStartGame"
+        android:padding="15dp"
+        android:text="@string/start_game"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+
+</RelativeLayout>

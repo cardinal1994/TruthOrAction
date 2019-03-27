@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue_white"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/TVNameOfPlayer"
+        android:textSize="50sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorTextTVTruthOrAction"
+        style="@style/TVGameActivity"
+        android:shadowColor="#440101"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="3"
+
+        />
+
+    <TextView
+        android:id="@+id/TVTruthOrActive"
+        style="@style/TVGameActivity"
+        android:layout_below="@id/TVNameOfPlayer"
+        android:layout_marginTop="5dp"
+        android:text="@string/TV_truth_or_action"
+        android:textSize="30sp"
+        android:textColor="@color/colorTextTVTruthOrAction"
+        android:shadowColor="#440101"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="3"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnTruth"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnTruth"
+        style="@style/ButtonStyle"
+        android:layout_below="@id/TVTruthOrActive"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/gameMarginLRButtons"
+        android:layout_marginTop="@dimen/MarginTopGame"
+        android:background="@drawable/shape_green"
+        android:padding="20dp"
+        android:visibility="visible"
+        android:onClick="onClickButtonTruth"
+        />
+
+    <Button
+        android:id="@+id/btnAction"
+        style="@style/ButtonStyle"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVTruthOrActive"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/MarginTopGame"
+        android:layout_marginEnd="@dimen/gameMarginLRButtons"
+        android:background="@drawable/shape_green"
+        android:elevation="0dp"
+        android:padding="20dp"
+        android:text="@string/btnAction"
+        android:visibility="visible"
+        android:onClick="onClickButtonActive"/>
+
+    <TextView
+        android:id="@+id/TVTellTheTruth"
+        android:text="@string/tell_the_truth"
+        style="@style/styleGameTextView1st"
+        android:shadowColor="#440101"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="3"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/TVDoTheAction"
+        style="@style/styleGameTextView1st"
+        android:text="@string/do_the_action"
+        android:shadowColor="#440101"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="3"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/game_read"
+        android:layout_marginStart="@dimen/GameTVMargins"
+        android:layout_marginEnd="@dimen/GameTVMargins"
+        android:layout_below="@id/TVNameOfPlayer"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:padding="@dimen/nameOfAppPaddings"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="@color/colorTextGameRead"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btnGameNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="@drawable/shape_green"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text"
+        android:layout_marginTop="20dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="25sp"
+        android:visibility="gone"
+        android:onClick="onClickButtonNext"
+        />
+
+
+
+
+
+</RelativeLayout>

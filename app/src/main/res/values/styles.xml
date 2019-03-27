@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+    </style>
+
+    <style name="ButtonStyle" parent="AlertDialog.AppCompat">
+        <item name="android:textSize">20dp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StyleButtons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="TVGameActivity">
+        <item name="android:padding">7dp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="styleGameTextView1st" parent="TVGameActivity">
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_below">@id/TVNameOfPlayer</item>
+        <item name="android:textColor">@color/colorTextTVTruthOrAction</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Truth or action</string>
+
+    <string name="title_activity_count_of_players">CountOfPlayersActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="btn_newGame">NEW GAME</string>
+    <string name="btn_next">NEXT</string>
+    <string name="btn_fastGame">FAST GAME</string>
+    <string name="btnAction">ACTION</string>
+    <string name="btnTruth">TRUTH</string>
+    <string name="TV_truth_or_action">TRUTH OR ACTION?</string>
+    <string name="TV_main_truth_or_action">TRUTH OR ACTION</string>
+    <string name="names_of_players">NAMES OF PLAYERS</string>
+    <string name="enter_name">Enter name</string>
+    <string name="add">ADD</string>
+    <string name="clear_all">CLEAR ALL</string>
+    <string name="start_game">START GAME</string>
+    <string name="tell_the_truth">TELL THE TRUTH:</string>
+    <string name="do_the_action">LETS DO IT:</string>
+    <string name="next">NEXT</string>
+
+</resources>
